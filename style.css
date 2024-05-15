@@ -1,0 +1,512 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --background: beige;
+  --ancent-color: #0e8743;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background: var(--background);
+}
+
+/* Hero Page */
+.hero-page {
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999;
+  background: var(--ancent-color);
+}
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 15px;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+.img-logo {
+  width: 80px;
+  height: 50px;
+}
+
+.logo {
+  width: 80px;
+  background: var(--primary-color);
+}
+
+.nav-bar a {
+  font-size: 1.15rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 10px;
+  cursor: pointer;
+  line-height: 0.6rem;
+}
+#check {
+  display: none;
+}
+.icons {
+  position: absolute;
+  right: 4%;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  text-align: center;
+  display: none;
+}
+
+/* Carousel */
+.carousel-box {
+  position: relative; /* Change position to relative */
+  height: 100%; /* Ensure carousel-box occupies full height of hero-page */
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  margin-top: 4rem;
+  height: calc(100vh - 4rem);
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* About Us */
+.about-us {
+  width: 100%;
+}
+.about-us h1 {
+  font-size: 45px;
+  line-height: normal;
+  text-align: center;
+  background: var(--ancent-color);
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+.about-box {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+  align-items: center;
+}
+.about-box .about-left img {
+  width: 550px;
+  padding: 10px 0;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+}
+
+.about-right p,
+.about-right li {
+  font-size: 18px;
+}
+
+/* services */
+.services {
+  width: 100%;
+  /* height: 100%; */
+}
+.services h1 {
+  font-size: 45px;
+  line-height: normal;
+  text-align: center;
+  background: var(--ancent-color);
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.service-box {
+  padding-top: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.ser-left,.ser-middle,.ser-right{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mini-box {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.popup .overlay{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+.popup .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  background: var(--primary-color);
+  width: 450px;
+  height: 250px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+.popup .contentl{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  background: var(--primary-color);
+  width: 450px;
+  height: 250px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+.popup .contentr{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  background: var(--primary-color);
+  width: 450px;
+  height: 250px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.content{
+  height: 100%;
+}
+.content h3{
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.content p{
+  padding-right: 5px;
+
+}
+.contentl{
+  height: 100%;
+}
+.contentl h3{
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.contentl p{
+  padding-right: 5px;
+
+}
+.contentr{
+  height: 100%;
+}
+.contentr h3{
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.contentr p{
+  padding-right: 5px;
+
+}
+
+
+.popup .close-btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.popup .close-btn h3{
+  margin:0;
+  font-size: 30px;
+}
+.popup.active .overlay{
+  display: block;
+}
+.popup.active .content{
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%,-50%) scale(1);
+  
+}
+.popup.active .contentl{
+  transition: all 300ms ease-in-out;
+  transform: translate(5%,-50%) scale(1);
+  
+}
+.popup.active .contentr{
+  transition: all 300ms ease-in-out;
+  transform: translate(-5%,-50%) scale(1);
+  
+}
+
+
+
+.mini-box img {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black;
+  margin: 5px;
+  border-radius: 50%; */
+  object-fit: contain;
+  object-position: center;
+}
+.mini-box p {
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+
+
+
+/* Breakpoints */
+@media (max-width: 992px) {
+  header {
+    padding: 0.2rem 2%;
+  }
+  .hero-page {
+    height: 40vh;
+    width: 100%;
+  }
+  .carousel-item img {
+    margin-top: 4rem;
+    height: calc(40vh - 4rem);
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* about me */
+  .about-us h1 {
+    font-size: 25px;
+  }
+  .about-box {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  .about-box .about-left{
+    width: 100%;
+  }
+  .about-box .about-left img {
+    width: 100%;
+    height: 200px;
+  }
+  .about-right p,
+  .about-right li {
+    font-size: 15px;
+  }
+  .services h1{
+    font-size: 25px;
+  }
+}
+
+/* For mobile */
+@media (max-width: 600px) {
+  header {
+    padding: 0.2rem 5%;
+  }
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  nav {
+    margin-right: 0;
+  }
+  .nav-bar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.3s ease;
+    background: var(--ancent-color);
+  }
+
+  #check:checked ~ .nav-bar {
+    height: 20rem;
+  }
+
+  .nav-bar a {
+    display: block;
+    font-size: 1rem;
+    margin: 1.2rem 0;
+    text-align: center;
+    transform: translateX(50px);
+    transition: 0.3s ease;
+    opacity: 0;
+  }
+
+  #check:checked ~ .nav-bar a {
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: calc(0.2s * var(--i));
+  }
+
+  /* about me */
+  .about-us h1 {
+    font-size: 23px;
+  }
+  .about-box {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  .about-box .about-left img {
+    width: 100%;
+    height: 200px;
+  }
+  .about-right p,
+  .about-right li {
+    font-size: 13px;
+  }
+
+  /* services */
+  .services h1{
+    font-size: 23px;
+  }
+  .service-box{
+    width: 100%;
+  }
+  .mini-box {
+    width: 100px;
+    height: 100px;
+  }
+  .popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: var(--primary-color);
+    width:250px;
+    height: 150px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+  }
+  .popup .contentl{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: var(--primary-color);
+    width:250px;
+    height: 150px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+  }
+  .popup .contentr{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: var(--primary-color);
+    width:250px;
+    height: 150px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+  }
+  .content h3{
+    font-size: 20px;
+  }
+  .content p{
+    font-size: 10px;
+  }
+  .contentl h3{
+    font-size: 20px;
+  }
+  .contentl p{
+    font-size: 10px;
+  }
+  .contentr h3{
+    font-size: 20px;
+  }
+  .contentr p{
+    font-size: 10px;
+  }
+}
