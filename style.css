@@ -500,11 +500,18 @@ header::after {
     transition-delay: calc(0.2s * var(--i));
   }
   .name{
+    display:flex;
     justify-content: flex-start;
+    align-items: center;
+    /* flex-wrap:wrap; */
+    padding-right:50px;
+   
+    margin-right:10px;
+
   }
   .logo{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .hero-page {
     height: 100vh;
