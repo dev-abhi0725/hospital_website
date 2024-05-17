@@ -116,11 +116,11 @@ header::after {
   height: 100%; /* Ensure carousel-box occupies full height of hero-page */
 }
 
-.cr {
+.carousel-item {
   height: 100%;
 }
 
-.cr img {
+.carousel-item img {
   margin-top: 4rem;
   height: calc(100vh - 4rem);
   width: 100%;
@@ -148,7 +148,7 @@ header::after {
 
 .about-us .about-g {
   background: var(--ancent-color);
-  height: 4rem;
+  height: 100%;
   width: 100%;
   text-align: center;
 }
@@ -158,6 +158,8 @@ header::after {
   line-height: normal;
   color: var(--primary-color);
   margin-bottom: 0;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px 0;
 }
 .about-box {
   padding: 0 20px;
@@ -225,16 +227,17 @@ header::after {
   width: 300px;
   height: 300px;
   display: flex;
-  padding: 5px;
+  /* padding: 5px; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* gap: 20px; */
   position: relative;
   cursor: pointer;
+  border: 2px solid var(--ancent-color);
   /* background: #c57a7a; */
 }
-.mini-box .dimg {
+/* .mini-box .dimg {
   margin-top: 0;
   width: 300px;
   height: 80%;
@@ -242,12 +245,12 @@ header::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: #000; */
-}
-.mini-box .dimg img{
-  border-radius: 50%;
+  background: #000;
+} */
+.mini-box  img{
+  /* border-radius: 50%; */
 
-  width: 90%;
+  width: 100%;
   height: 100%;
   /* padding: 0 10px; */
   object-fit: cover;
@@ -398,7 +401,7 @@ header::after {
 .vid-box {
   width: 320px;
   height: 200px;
-  border: 1px solid black;
+  border: 1px solid var(--ancent-color);
   margin-bottom: 10px;
 }
 .vid-box video {
@@ -429,7 +432,7 @@ header::after {
 }
  
   .my-carousel-container {
-  border: 1px solid black;
+  border: 1px solid var(--ancent-color);
   width: 40%;
   height: 300px;
   margin: auto; /* Center the carousel horizontally */
@@ -494,6 +497,9 @@ header::after {
   width: 100%;
   height:  100%;
 
+}
+.a-box{
+  
 }
 
 
@@ -576,7 +582,7 @@ header::after {
     height: 100vh;
     width: 100%;
   }
-  .cr img {
+  .carousel-item img {
     margin-top: 8.7rem;
     height: calc(100vh - 8.7rem);
     width: 100%;
@@ -610,15 +616,15 @@ header::after {
     height: 125px;
     padding-bottom: 5px;
   }
-  .mini-box .dimg {
+  /* .mini-box .dimg {
     margin-top: 0;
     width: 120px;
     height: 80%;
     overflow: hidden;
-    /* background: #000; */
-  }
-  .mini-box .dimg img{
-    border-radius: 50%;
+    background: #000;
+  } */
+  .mini-box  img{
+    /* border-radius: 50%; */
   
     width: 100%;
     height: 100%;
@@ -668,7 +674,7 @@ header::after {
     height: 45vh;
     width: 100%;
   }
-  .cr img  { 
+  .carousel-item img  { 
     margin-top: 7rem;
     height: calc(45vh - 7rem);
     width: 100%;
@@ -727,15 +733,15 @@ header::after {
   .mini-box p {
     margin-bottom: 0;
   }
-  .mini-box .dimg {
+  /* .mini-box .dimg {
     margin-top: 0;
     width: 90px;
     height: 75%;
     overflow: hidden;
-    /* background: #000; */
-  }
-  .mini-box .dimg img{
-    border-radius: 50%;
+    background: #000;
+  } */
+  .mini-box img{
+    /* border-radius: 50%; */
   
     width: 100%;
     height: 100%;
