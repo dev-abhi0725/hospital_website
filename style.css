@@ -526,6 +526,7 @@ header::after {
   margin-top: 0;
   text-decoration: underline;
   font-size: 35px;
+  font-weight: bold;
 }
 .a-right p{
   color: var(--secondary-color);
