@@ -18,6 +18,9 @@
   <!-- Styling Css -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="./others/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -50,7 +53,7 @@
 
 
       <!-- Popup  -->
-      <div id="popupmain">
+      <!-- <div id="popupmain">
         <div id="pop-up">
           <h3 id="heading-popup">Book Your Appointment Now!</h3>
           <div class="closeit xy" onclick="closepop()">
@@ -58,20 +61,20 @@
           </div>
           <a href="https://www.instagram.com/dr.tanupa_s?igsh=Ynphbm5sNzEwMWV5" target="_blank">Book Now!</a>
         </div>
-      </div>
-      
+      </div> -->
+
     </header>
     <section class="carousel-box">
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel"
         data-bs-interval="3000">
-        <!-- <div class="carousel-indicators">
+        <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
-        </div> -->
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item cr active">
             <img src="./asset/images/carousel1.jpg" class="d-block  w-100" alt="...">
@@ -502,59 +505,95 @@
       <div class="br-up"></div>
     </section>
 
-    <!-- Testimonial  -->
-    <secton class="testimonia">
+    
+    <!-- Carousel section end here -->
+    <div class="testi">
       <h1>Testimonial</h1>
       <div class="br-down"></div>
+      <section class="containertesti">
+          <div class="testimonial mySwiper">
+              <div class="testi-content swiper-wrapper">
+                  <div class="slide-l slide swiper-slide">
+                    <div class="rev-pic">
+                      <img class="imagel" src="./asset/images/reviews/rev1.jpg" alt="">
+                      <p class="rev-namel">Deepak Chaudhary</p>
+                     </div>
+                    <div class="rev-para">
+                    <p>It is worth mentioning that I have been consulting Dr. Tanupa at many occasions during last six months and I must admit that she has very accurate diagnosis of ailments every time consulted.  Furthermore, not only the diagnosis but  the homeopathy medicines provide immediate relief and I must admit that in my case the cure/results were fast even before completion of full homeopathy course. Moreover, She is very kind & empathetic and could relate easily with her patients.</p>
+                    </div>
+                     
+                  </div>
+                  <div class="slide-r  slide  swiper-slide">
+                    <div class="rev-para">
+                    <p>Very refreshing, welcoming and a genuine example of how a DOCTOR should be. 
+                      I actually recommend all the doctors to visit her once to learn how to treat patients, not just with medicines but also with behaviour.
+                      You name it and she cures it.</p>
+                    </div>
+                     <div class="rev-pic">
+                      <img class="imager" src="./asset/images/reviews/rev2.jpg" alt="">
+                      <p class="rev-namer">Mahesh Poddar</p>
 
-      <div class="br-up"></div>
-    </secton>
+                     </div>
+                  </div>
+              </div>
+              <div class="swiper-button-next nav-btn"></div>
+              <div class="swiper-button-prev nav-btn"></div>
+              <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <div class="br-up"></div>
   </div>
+  <!-- Carousel section end here -->
 
 
 
 
-  <!-- Custom Js  -->
-  <script src="app.js"></script>
-  <!--  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <!-- Custom Js  -->
+    <script src="app.js"></script>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      setTimeout(function () {
-        $('#popupmain').css('display', 'block');
-        $('.pop-btn').css('display', 'none');
-      }, 3000);
-    });
-    $(document).ready(function () {
-      setTimeout(function () {
-        $('.pop-btn').css('display', 'none');
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $('#popupmain').css('display', 'block');
+          $('.pop-btn').css('display', 'none');
+        }, 3000);
       });
-    });
+      $(document).ready(function () {
+        setTimeout(function () {
+          $('.pop-btn').css('display', 'none');
+        });
+      });
 
-    $('.closeit').click(function () {
-      $('#popupmain').css('display', 'none');
-      $('.pop-btn').css('display', 'block');
+      $('.closeit').click(function () {
+        $('#popupmain').css('display', 'none');
+        $('.pop-btn').css('display', 'block');
 
-    });
-    // Function to display the popup
-    function pop() {
-      document.getElementById('popupmain').style.display = 'flex'; // Using 'flex' to center the popup
-      
-    document.querySelector('.pop-btn').style.display = 'none'; // Hide the "Book Now!" button
-}
-    
+      });
+      // Function to display the popup
+      function pop() {
+        document.getElementById('popupmain').style.display = 'flex'; // Using 'flex' to center the popup
 
-// for book now button 
-    document.querySelector('.booknow').addEventListener('click', pop);
-    document.querySelector('.closeit').addEventListener('click', closepop);
+        document.querySelector('.pop-btn').style.display = 'none'; // Hide the "Book Now!" button
+      }
 
-  </script>
+
+      // for book now button 
+      document.querySelector('.booknow').addEventListener('click', pop);
+      document.querySelector('.closeit').addEventListener('click', closepop);
+
+    </script>
+
+    <!-- Swiper JS -->
+  <script src="./others/swiper-bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script src="./others/carouselscript.js"></script>
 </body>
 
 </html>
