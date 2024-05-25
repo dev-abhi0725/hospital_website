@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lilita+One&family=Permanent+Marker&family=Sedan+SC&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lilita+One&family=Permanent+Marker&family=Sedan+SC&display=swap");
 
 :root {
   --primary-color: #fff;
@@ -21,9 +20,10 @@ html {
 body {
   background: var(--background);
   /* background: #6c4e4e; */
+  overflow-x: hidden;
 }
 
-h1{
+h1 {
   font-size: 45px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
@@ -34,7 +34,6 @@ h1{
   margin-bottom: 0;
 }
 
-
 /* Hero Page */
 .hero-page {
   height: 100vh;
@@ -44,25 +43,30 @@ h1{
   /* height: 100%; */
   width: 100%;
 }
-.whatsapp{
+.whatsapp {
   position: fixed;
   z-index: 9999999;
   left: 10%;
   top: 50%;
-
 }
-.call{
+.call {
   position: fixed;
   z-index: 9999999;
-  right:  10%;
+  right: 10%;
   top: 50%;
-
 }
-.whatsapp a , .call a{
+.whatsapp a,
+.call a {
+  width: 50px;
+  height: 50px;
   text-decoration: none;
   color: var(--ancent-color);
   font-size: 50px;
   cursor: pointer;
+  background: var(--primary-color);
+  padding: 0 8px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 header {
   top: 0;
@@ -203,34 +207,34 @@ header::after {
   transform: translate(3px, 5px);
 }
 
-.pop-btn{
+.pop-btn {
   display: none;
   position: fixed;
-  left:  50%;
+  left: 50%;
   bottom: 10%;
   z-index: 999999999;
   display: flex;
-  transform: translate(-50%,-10%);
+  transform: translate(-50%, -10%);
   /* transform: rotate(90deg); */
 }
-.booknow{
+.booknow {
   font-size: 18px;
-  padding: 5px  10px;
+  padding: 5px 10px;
   background: var(--ancent-color);
   border: none;
   color: var(--primary-color);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.booknow:hover{
+.booknow:hover {
   padding: 7px 15px;
 }
 
 /* Carousel */
 .carousel-box {
-  position: relative; 
-  height: calc(100vh - 6rem); 
+  position: relative;
+  height: calc(100vh - 6rem);
 }
 
 .carousel-item {
@@ -297,7 +301,6 @@ header::after {
   width: 100%;
   background: url(./asset/images/bg.jpg);
 }
-
 
 .service-box {
   padding-top: 10px;
@@ -466,7 +469,7 @@ header::after {
 /* videos */
 .youtube-video {
   width: 100%;
-  background:url(./asset/images/bg.jpg);
+  background: url(./asset/images/bg.jpg);
 }
 
 .vid-content {
@@ -489,8 +492,7 @@ header::after {
 /* Result */
 .result {
   width: 100%;
-  background:url(./asset/images/bg.jpg);
-
+  background: url(./asset/images/bg.jpg);
 }
 
 .result-box {
@@ -551,8 +553,7 @@ header::after {
 /* About Us */
 .about {
   width: 100%;
-  background:url(./asset/images/bg.jpg);
-
+  background: url(./asset/images/bg.jpg);
 }
 
 .about-div {
@@ -608,8 +609,7 @@ header::after {
 /* Testimonial */
 .testimonia {
   width: 100%;
-  background:url(./asset/images/bg.jpg);
-
+  background: url(./asset/images/bg.jpg);
 }
 /* Carousel */
 .testi {
@@ -650,7 +650,7 @@ header::after {
   object-fit: cover;
   border-radius: 10%;
 }
-.rev-namer{
+.rev-namer {
   margin-right: 150px;
   text-align: center;
 }
@@ -663,7 +663,7 @@ header::after {
   object-fit: cover;
   border-radius: 10%;
 }
-.rev-namel{
+.rev-namel {
   margin-left: 140px;
   text-align: center;
 }
@@ -702,7 +702,7 @@ header::after {
   flex-direction: column;
   align-items: center;
 }
-.rev-pic{
+.rev-pic {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -744,7 +744,6 @@ header::after {
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
 }
-
 
 /* Breakpoints */
 @media (max-width: 992px) {
@@ -824,12 +823,7 @@ header::after {
     height: 100vh;
     width: 100%;
   }
-  
 
-
-
-
-  
   .carousel-item img {
     /* margin-top: 8.7rem; */
     height: calc(100vh - 6rem);
@@ -841,7 +835,6 @@ header::after {
   .about-us h1 {
     font-size: 25px;
     /* text-align: center; */
-
   }
   .about-box {
     flex-direction: column;
@@ -965,11 +958,11 @@ header::after {
     object-fit: cover;
     border-radius: 10%;
   }
-  .rev-namer{
+  .rev-namer {
     margin-right: 0px;
     text-align: center;
   }
-  
+
   .testimonial .imagel {
     /* height: 250px;
     width: 250px; */
@@ -978,16 +971,16 @@ header::after {
     object-fit: cover;
     border-radius: 10%;
   }
-  .rev-namel{
+  .rev-namel {
     margin-left: 0px;
     text-align: center;
   }
   .testi h1 {
     font-size: 25px;
   }
-.slide p{
-  font-size: 15px;
-}
+  .slide p {
+    font-size: 15px;
+  }
 }
 
 /* For mobile */
@@ -995,7 +988,7 @@ header::after {
   header {
     height: 4rem;
   }
-  .nav-bar{
+  .nav-bar {
     top: calc(4rem - 1px);
     /* z-index: 1111; */
   }
@@ -1003,8 +996,11 @@ header::after {
     height: 45vh;
     width: 100%;
   }
-
-
+  .whatsapp a,
+  .call a{
+    font-size: 30px;
+    padding: 0 4px;
+  }
   #pop-up {
     position: absolute;
     height: 200px;
@@ -1036,16 +1032,9 @@ header::after {
     transform: translate(3px, 5px);
   } */
 
-
-
-
-
-
-
-
   .carousel-box {
-    position: relative; 
-    height: calc(45vh - 4rem); 
+    position: relative;
+    height: calc(45vh - 4rem);
   }
   .carousel-item img {
     /* margin-top: 7rem; */
@@ -1262,7 +1251,7 @@ header::after {
     /* margin: auto 50px; */
     /* backgrou nd: #25bd58; */
   }
-  
+
   .testimonial .imager {
     height: 250px;
     width: 250px;
@@ -1271,11 +1260,11 @@ header::after {
     object-fit: cover;
     border-radius: 10%;
   }
-  .rev-namer{
+  .rev-namer {
     margin-right: 0px;
     text-align: center;
   }
-  
+
   .testimonial .imagel {
     height: 250px;
     width: 250px;
@@ -1284,7 +1273,7 @@ header::after {
     object-fit: cover;
     border-radius: 10%;
   }
-  .rev-namel{
+  .rev-namel {
     margin-left: 0px;
     text-align: center;
   }
@@ -1295,8 +1284,8 @@ header::after {
     font-size: 13px;
     padding: 0 20px;
   }
-  .nav-btn{
-    display:none;
+  .nav-btn {
+    display: none;
     background: none;
   }
   .nav-btn::after {
