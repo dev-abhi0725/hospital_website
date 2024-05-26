@@ -18,7 +18,7 @@ html {
   font-family: "Times New Roman", Times, serif;
 }
 body {
-  background: var(--background);
+  background: var(--primary-color);
   /* background: #6c4e4e; */
   overflow-x: hidden;
 }
@@ -77,7 +77,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 99999;
-  background: var(--background);
+  background: var(--primary-color);
 }
 nav {
   flex: 1;
