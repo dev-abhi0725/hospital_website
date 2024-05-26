@@ -109,11 +109,12 @@ header::after {
   flex: 1;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+  padding-left: 5px;
 }
 .name h2 {
   color: var(--ancent-color);
-  font-size: 35px;
+  font-size: 37px;
   font-family: "Sedan SC", serif;
   font-weight: 600;
   margin-bottom: 0;
@@ -123,8 +124,8 @@ header::after {
 }
 
 .logo {
-  width: 120px;
-  height: 100px;
+  width: 130px;
+  height: 110px;
 }
 
 .nav-bar a {
@@ -998,7 +999,7 @@ header::after {
     width: 100%;
   }
   .whatsapp a,
-  .call a{
+  .call a {
     font-size: 30px;
     padding: 0 4px;
   }
@@ -1197,7 +1198,7 @@ header::after {
     width: 60%;
     height: 150px;
   }
-  
+
   .my-carousel-control {
     font-size: 1.5rem;
   }
